@@ -1,0 +1,47 @@
+<?php 
+
+session_start();
+	include("connection.php");
+	include("functions.php");
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HOSPITAL PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">NRB</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <div class="dropdown"> 
+                 <li><a href="login.html">LOGIN</a></li>
+                            <div class="dropdown-content">
+                              <a href="admin login.php">Admin</a>
+                              <a href="doctor login.php">Doctor</a>
+                              <a href="login.php">Patient</a>
+                            </div>
+                </div>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="column">
+            <form class="form" method="post">
+                <input type="text" name="fname" placeholder="Full Name..">
+                <input type="text" id="email" name="email" placeholder="Email.."><br><br>
+                <textarea id="messages" name="messages" placeholder="Message.." style="width:350px"></textarea>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+        </div>
+     </div>
+</body>
+</html>

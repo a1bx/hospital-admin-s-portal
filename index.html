@@ -1,0 +1,76 @@
+<?php 
+
+session_start();
+	include("connection.php");
+	include("functions.php");
+
+?><!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HOSPITAL PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">MHH</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <div class="dropdown"> 
+                 <li><a href="login.html">LOGIN</a></li>
+                            <div class="dropdown-content">
+                              <a href="admin login.php">Admin</a>
+                              <a href="doctor login.php">Doctor</a>
+                              <a href="login.php">Patient</a>
+                            </div>
+                </div>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="contacts.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Welcome to Mediheal Hospital<br><span></span> <br></h1>
+            <p>
+                
+            </p>
+        </div>
+     </div>
+     
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <label>quick links</label>
+            <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="services.html"> <i class="fas fa-chevron-right"></i> services </a>
+            <a href="aboutus.html"> <i class="fas fa-chevron-right"></i> about </a>
+            <a href="login.php"> <i class="fas fa-chevron-right"></i> doctors </a>
+            <a href="login.php"><i class="fas fa-chevron-right">appointment</i> </a>
+        </div>
+
+        <div class="box">
+            <label>our services</label>
+            <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> therapy </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+        </div>
+
+        <div class="box">
+            <label>contact info</label>
+            <a href="#"> <i class="fas fa-phone"></i> +254-714-465-242 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +254-11 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+            <a href="#"> <i class="fas fa-envelope"></i> jeremih12@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Nairobi, Kenya </a>
+        </div>
+    </div>
+</section>
+</html>
